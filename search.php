@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package firesticks
+ * @package Firesticks
  */
 
 get_header(); ?>
