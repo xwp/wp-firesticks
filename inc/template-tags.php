@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package firesticks
+ * @package Firesticks
  */
 
 if ( ! function_exists( 'firesticks_posted_on' ) ) :

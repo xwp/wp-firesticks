@@ -1,8 +1,8 @@
 <?php
 /**
- * firesticks Theme Customizer
+ * Firesticks Theme Customizer
  *
- * @package firesticks
+ * @package Firesticks
  */
 
 /**
