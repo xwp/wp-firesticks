@@ -105,6 +105,8 @@ add_action( 'widgets_init', 'firesticks_widgets_init' );
  * Enqueue scripts and styles.
  */
 function firesticks_scripts() {
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap-grid.min.css');
+
 	wp_enqueue_style( 'firesticks-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'firesticks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -116,6 +118,16 @@ function firesticks_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'firesticks_scripts' );
+
+// Enqueue Google Fonts
+function _flint_google_fonts() {
+	$query_args = array(
+		'family' => 'Lato:400,700'
+	);
+	wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
+    }
+            
+add_action('wp_enqueue_scripts', '_flint_google_fonts');
 
 /**
  * Implement the Custom Header feature.
@@ -141,3 +153,4 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
