@@ -972,6 +972,7 @@ a:active {
 	margin: 0 auto;
 }
 
+/*Business Model Canvas*/
 .business-model {
 	width: 100%;
 	font-size: 0.8em;
@@ -984,8 +985,8 @@ a:active {
 	margin-bottom: 0.5em;
 }
 .business-model .canvas {
-	border-right: 1px solid #c6c6c6;
-	border-bottom: 1px solid #c6c6c6;
+	border-right: 2px solid #f4f4f4;
+	border-bottom: 2px solid #f4f4f4;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
@@ -997,9 +998,9 @@ a:active {
 	flex: 1 1 20%;
 }
 .business-model .canvas div > div {
-	border-top: 1px solid #c6c6c6;
-	border-left: 1px solid #c6c6c6;
-	background: #f7f7f7;
+	border-top: 2px solid #f4f4f4;
+	border-left: 2px solid #f4f4f4;
+	background: #fff;
 	padding: 1em;
 	overflow: scroll;
 }
@@ -1008,6 +1009,7 @@ a:active {
 	flex-flow: row wrap;
 	align-items: stretch;
 	align-content: stretch;
+	margin: 0;
 }
 .business-model .canvas .key-partners {
 	height: 40em;
