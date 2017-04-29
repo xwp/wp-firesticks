@@ -154,3 +154,6 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+// Add theme support for custom logo
+
+add_theme_support ( 'custom-logo');
