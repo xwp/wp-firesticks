@@ -891,6 +891,9 @@ a:active {
 .likes a {
 	font-size: 0;
 }
+.likes a.unlike:after {
+	color: #ff4401;
+}
 .likes a:after {
 	content: "\f487";
 	font-family: 'Dashicons';
