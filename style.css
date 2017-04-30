@@ -787,6 +787,16 @@ a:active {
 
 .site-footer {
 	margin-bottom: 3em;
+	font-size: 12px;
+}
+
+.site-footer a {
+	color: #aeb6bf;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	text-decoration: underline;
 }
 
 .sticky {
