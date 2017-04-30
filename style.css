@@ -784,6 +784,11 @@ a:active {
 .site {
 	background-color: #f1f7fa;
 }
+
+.site-footer {
+	margin-bottom: 3em;
+}
+
 .sticky {
 	display: block;
 }
