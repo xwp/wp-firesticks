@@ -782,7 +782,7 @@ a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .site {
-	background-color: #f1f7fa;
+	/*background-color: #f1f7fa;*/
 }
 .sticky {
 	display: block;
@@ -812,119 +812,28 @@ a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+.roles li .avatar.empty {
+	background-color: #f7f7f7;
+}
 /*Project Archive Tiles*/
-.projects-archive {
-	width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
-}
-.projects-archive .project {
-    display: inline-block;
-    width: 100%;
-	margin-bottom: 30px;
-    vertical-align: top;
-    position: relative;
-    padding-bottom: 72px;
-}
-@media screen and (min-width: 910px) {
-    .projects-archive .project {
-        width: 48%;
-    }
-}
 
 .projects-archive .project {
 	border-radius: 3px;
-	overflow: hidden;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
-	background-color: #fff;
+	border-width: 0;
 }
-.projects-archive .project .entry-title {
-	padding: 20px 40px 0;
-}
-.projects-archive .project .description {
-	font-size: 14px;
-	padding: 0 40px;
+.project .roles {
+	background-color: transparent;
 }
 .projects-archive .project .roles {
-	position: absolute;
-	width: 100%;
-    bottom: 0;
-    left: 0;
-	padding: 20px 40px 20px;
+	/*background-color: #fff;*/
 	border-top: 2px solid #f4f4f4;
-	margin-top: 20px;
 }
-.projects-archive .project .roles li {
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	margin: 0 2px 0;
-	border-radius: 15px;
-	overflow: hidden;
+.roles li .avatar.empty {
+	border-width: 0;
+	background-color: #f4f4f4;
 }
-.projects-archive .project .roles li .avatar.empty {
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-.projects-archive .project .roles li > div {
-	width: 100%;
-	height: 100%;
-}
-.projects-archive .project .roles .role, .projects-archive .project .roles .name {
-	display: none;
-}
-.projects-archive .project .learn-more-link {
-	display: block;
-	right: 1em;
-	bottom: 1em;
-	box-shadow: none;
-	font-family: 'Montserrat', sans-serif;
-	border: 2px solid #aaa;
-	color: #aaa;
-	padding: 6px 12px;
-	font-size: 0.8rem;
-	border-radius: 2px;
-	text-align: center;
-}
-.projects-archive .project .learn-more-link:hover {
-	border: 2px solid #FF4400;
-	color: #FF4400;
-}
-/*Project Tile Like Button*/
-.likes {
-	position: absolute;
-	top: 14px;
-    right: 20px;
-}
-.likes span {
-	position: relative;
-	font-size: 0.8em;
-	display: inline-block;
-	top: -7px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-}
-.likes a {
-	font-size: 0;
-}
-.likes a.unlike:after {
-	color: #ff4401;
-}
-.likes a:after {
-	content: "\f487";
-	font-family: 'Dashicons';
-	font-size: 1.4rem;
-}
-.likes a.like:after {
-	color: #E5F3FF;
-}
-.likes a:hover.like:after {
-	color: #ff4401;
-}
+
 
 /*Single Project Page*/
 
@@ -1238,62 +1147,4 @@ To learn how this works, see http://wp.me/PEmnE-Bt
 	/*display: block*/
 }
 
-
-
-.roles {
-	position: relative;
-   
-	list-style-type: none;
-	margin: 0 auto;
-}
-.roles li {
-	display: inline-block;
-	padding: 0 0.5em;
-	margin-top: 1em;
-	width: 150px;
-	vertical-align: top;
-	position: relative;
-	font-size: 15px;
-}
-.roles li span {
-	display: block;
-}
-.roles li .role {
-	padding-top: 0.5em;
-	font-weight: bold;
-}
-.roles li img.avatar {
-	/*border: 1px solid rgba(0,0,0,0.33);*/
-}
-.roles li .open img.avatar {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0.8;
-	z-index: -1;
-}
-.roles li .avatar.empty {
-	width: 96px;
-	height: 96px;
-	border-radius: 50%;
-	background-color: #fff;
-	margin: 0 auto;
-	background-color: rgba(255,68,0,0.1);
-}
-.roles li .open .avatar.empty:hover {
-	background: rgba(0,0,0,0);
-}
-.roles li .avatar.empty .join {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	line-height: 96px;
-	font-weight: bold;
-	color: #444;
-	text-shadow: none;
-}
-.roles li .avatar.empty:hover .join {
-	color: #fff;
-}
 
