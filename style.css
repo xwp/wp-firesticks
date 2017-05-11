@@ -128,7 +128,7 @@ h6 {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.67em;
 	margin: 0.67em 0;
 }
 
@@ -784,6 +784,21 @@ a:active {
 .site {
 	/*background-color: #f1f7fa;*/
 }
+
+.site-footer {
+	margin-bottom: 3em;
+	font-size: 12px;
+}
+
+.site-footer a {
+	color: #aeb6bf;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	text-decoration: underline;
+}
+
 .sticky {
 	display: block;
 }
@@ -812,21 +827,116 @@ a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
 .roles li .avatar.empty {
 	background-color: #f7f7f7;
 }
-/*Project Archive Tiles*/
 
+/*Project Archive Tiles*/
+.projects-archive {
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .projects-archive .project {
+    display: inline-block;
+    width: 100%;
+	margin-bottom: 30px;
+    vertical-align: top;
+    position: relative;
+    padding-bottom: 72px;
 	border-radius: 3px;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 	border-width: 0;
+	background-color: #fff;
+}
+.projects-archive .project .entry-title {
+	padding: 0 80px 0 40px;
 }
 .project .roles {
 	background-color: transparent;
 }
 .projects-archive .project .roles {
 	border-top: 2px solid #f4f4f4;
+	margin-top: 20px;
+}
+.projects-archive .project .roles li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0 2px 0;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.projects-archive .project .roles li .avatar.empty {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.projects-archive .project .roles li > div {
+	width: 100%;
+	height: 100%;
+}
+.projects-archive .project .roles .role, .projects-archive .project .roles .name {
+	display: none;
+}
+.projects-archive .project .learn-more-link {
+	box-shadow: none;
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid #7B8F97;
+	color: #7B8F97;
+	padding: 6px 12px;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+	bottom: auto;
+	right: auto;
+	z-index: 10;
+}
+.projects-archive .project .learn-more-link:hover {
+	border: 2px solid #FF4400;
+	color: #FF4400;
+}
+@media screen and (min-width: 910px) {
+	.projects-archive .project {
+		width: 48%;
+	}
+}
+@media screen and (min-width: 992px) {
+	.projects-archive .project .learn-more-link {
+		position: absolute;
+		bottom: 18px;
+		right: 20px;
+	}
+}
+/*Project Tile Like Button*/
+.likes {
+	position: absolute;
+	top: 12px;
+    right: 20px;
+}
+.likes span {
+	position: relative;
+	font-size: 0.8em;
+	display: inline-block;
+	top: -7px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.likes a {
+	font-size: 0;
+}
+.likes a.unlike:after {
+	color: #ff4401;
+}
+.likes a:after {
+	content: "\f487";
+	font-family: 'Dashicons';
+	font-size: 1.4rem;
 }
 .roles li .avatar.empty {
 	border-width: 0;

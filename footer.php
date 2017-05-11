@@ -15,9 +15,7 @@
 
 	<footer id="colophon" class="site-footer container" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'firesticks' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'firesticks' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'firesticks' ), 'firesticks', '<a href="https://automattic.com/" rel="designer">XWP</a>' ); ?>
+			<a href="<?php echo esc_url( 'https://xwp.co/' ); ?>"><?php printf( esc_html__( '%s %s XWP', 'firesticks' ), '&copy;', date( 'Y' ) ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
