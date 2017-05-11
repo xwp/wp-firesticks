@@ -826,7 +826,6 @@ a:active {
 	background-color: transparent;
 }
 .projects-archive .project .roles {
-	/*background-color: #fff;*/
 	border-top: 2px solid #f4f4f4;
 }
 .roles li .avatar.empty {
@@ -836,10 +835,7 @@ a:active {
 
 
 /*Single Project Page*/
-
 .single-project article .entry-header {
-	/*color: #fff;*/
-	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.3);*/
 	text-align: center;
 	padding: 1em;
 	margin: 0 auto 2em;
