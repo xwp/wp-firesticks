@@ -989,9 +989,9 @@ a:active {
 
 /*Business Model Canvas*/
 .business-model {
-	width: 100%;
+	min-width: 90%;
 	font-size: 0.8em;
-	margin: 3em 0 !important;
+	margin: 3em auto !important;
 }
 .business-model h2 {
 	margin: 0 15% 0.5em;
@@ -1010,7 +1010,7 @@ a:active {
 }
 .business-model .canvas div {
 	width: 100%;
-	flex: 1 1 20%;
+	flex: 1 1 33%;
 }
 .business-model .canvas div > div {
 	border-top: 2px solid #f4f4f4;
@@ -1026,30 +1026,12 @@ a:active {
 	align-content: stretch;
 	margin: 0;
 }
-.business-model .canvas .key-partners {
-	height: 40em;
+.business-model .canvas .delivery-activities,
+.business-model .canvas .value-proposition,
+.business-model .canvas .customer-profile{
+	height: 30em;
 }
-.business-model .canvas .key-activities {
-	height: 20em;
-}
-.business-model .canvas .key-resources {
-	height: 20em;
-}
-.business-model .canvas .value-proposition{
-	height: 40em;
-}
-.business-model .canvas .customer-relationships {
-	height: 20em;
-}
-.business-model .canvas .channels {
-	height: 20em;
-}
-.business-model .canvas .customer-segments {
-	height: 40em;
-}
-.business-model .canvas .cost-structure {
-	height: 15em;
-}
+.business-model .canvas .cost-structure,
 .business-model .canvas .revenue-streams {
 	height: 15em;
 }
