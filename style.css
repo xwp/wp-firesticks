@@ -47,7 +47,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 
-* {
+*,
+*:before,
+*:after {
 	transition: 0.2s;
 }
 html {
@@ -437,15 +439,19 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
+	box-shadow: none;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid #7B8F97;
+	color: #7B8F97;
+	padding: 6px 12px;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+	bottom: auto;
+	right: auto;
+	z-index: 10;
 }
 
 button:hover,
@@ -458,37 +464,7 @@ input[type="submit"]:hover {
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
-}
-
-select {
+input[type="submit"]:focus,g
 	border: 1px solid #ccc;
 }
 
@@ -968,8 +944,9 @@ a:active {
 	margin-top: 3em;
 	background-color: #fff;
     padding: 3em 4em;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+    /*box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);*/
     border-radius: 3px;
+    border: 2px solid #7B8F97;
 }
 .single-project article .entry-content ul,
 .single-project article .entry-content ol {
@@ -981,6 +958,15 @@ a:active {
 }
 .single-project article .roles li span.empty {
 	background-color: #fff;
+}
+.single-project .tabs {
+	display: flex;
+    justify-content: center;
+}
+.single-project nav.tabs li.current,
+.single-project .tab-content {
+    box-shadow: 0 -5px 50px 0px rgba(214,231,239,0.2);
+    border: 1px solid #fff;
 }
 
 /*Business Model Canvas*/
@@ -1041,26 +1027,55 @@ a:active {
 
 .timeline ul {
 	list-style-type: none;
-	border-left: 3px solid #000;
-	margin-left: 0;
+	border-left: 2px solid #7B8F97;
+	margin-left: 120px !important;
 	padding-left: 40px;
+	position: relative;
+	list-style-type: none;
+}
+.timeline li {
+	border: 2px solid #f7f7f7;
+	background: #f7f7f7;
+/*	border: 1px solid #c6c6c6;
+*/	margin-bottom: 1em;
+	padding: 1em 1em 0;
+	border-radius: 2px;
 	position: relative;
 }
 .timeline li .date {
 	font-style: italic;
 	margin-bottom: 0.5em;
+	position: absolute;
+	left: 0px;
+	top: -6px;
+	margin-left: -230px;
+	text-align: right;
+	width: 150px;
+	font-size: 0.9em;
+}
+.timeline li h3 {
+	margin-top: 0;
 }
 .timeline li:before {
-	width: 18px;
-	height: 18px;
-	border-radius: 9px;
-	background: #000;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #ffffff;
+	border: 2px solid #7B8F97;
 	display: block;
 	content: '';
 	position: absolute;
-	left: 0;
-	margin-left: -10px;
-	margin-top: 6px;
+	top: -2px;
+	left: -49px;
+}
+.timeline li:hover:before {
+	border-color: #ff4401;
+	background-color: #ff4401;
+	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
+}
+.timeline li:hover {
+	border-color: #ff4401;
+	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 }
 .timeline li h3 {
 	margin-bottom: 0.5em;
@@ -1068,10 +1083,10 @@ a:active {
 .timeline li p {
 	margin: 0 0 1em;
 }
-@media screen and (min-width: 756px) {
+/*@media screen and (min-width: 756px) {
 	.timeline ul {
 		list-style-type: none;
-		border-left: 3px solid #000;
+		border-left: 2px solid #7B8F97;
 		margin-left: 190px !important;
 		padding-left: 40px;
 		position: relative;
@@ -1094,7 +1109,7 @@ a:active {
 	.timeline li:before {
 		margin-left: -51px;
 	}
-}
+}*/
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
