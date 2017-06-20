@@ -621,7 +621,38 @@ a:active {
 .main-navigation.toggled ul {
 	display: block;
 }
+.menu-toggle {
+	position: absolute;
+	top: 11px;
+	right: 15px;
+}
+.menu-toggle:hover,
+.menu-toggle:focus,
+.menu-toggle:active {
+	border-color: #FF4400;
+	color: #FF4400;
+}
 
+@media screen and (max-width: 37.5em) {
+	.main-navigation.toggled ul {
+		float: none;
+	}
+	.main-navigation ul li {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.main-navigation ul li a {
+		width: 100%;
+	}
+	.main-navigation ul li.nav-btn a {
+		margin-left: 0;
+	}
+	.site-header .container {
+		display: block;
+	}
+}
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
