@@ -1006,7 +1006,8 @@ a:active {
 	display: block;
 	top: -10px;
 }
-.single-project .comments-area .reply a {
+.single-project .comments-area .reply a,
+.single-project .comments-area input[type="submit"] {
 	display: inline-block;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #7B8F97;
@@ -1016,6 +1017,11 @@ a:active {
     border-radius: 2px;
     text-align: center;
     position: relative;
+}
+.single-project .comments-area .reply a:hover,
+.single-project .comments-area input[type="submit"]:hover {
+	border-color: #FF4400;
+	color: #FF4400;
 }
 /*Business Model Canvas*/
 .business-model {
