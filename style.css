@@ -1005,7 +1005,7 @@ a:active {
 	margin: 0;
 	padding: 0;
 }
-.single-project .comments-area .comment article{
+.single-project .comments-area .comment article {
 	padding: 20px 0;
 	border-bottom: 2px solid #f1f7fa;
 }
@@ -1190,6 +1190,54 @@ a:active {
 	.timeline li:before {
 		margin-left: -51px;
 	}
+}*/
+/*Login page*/
+.page-template-page_login .content-area {
+	text-align: center;
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+}
+.page-template-page_login .content-area .site-main {
+	width: 100%;
+}
+.page-template-page_login #loginform {
+	display: inline-block;
+    position: relative;
+    padding: 60px 80px;
+    width: 480px;
+	border-radius: 3px;
+	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
+	border-width: 0;
+	background-color: #fff;
+}
+.page-template-page_login #loginform {
+	text-align: left;
+}
+.page-template-page_login #loginform input[type="text"],
+.page-template-page_login #loginform input[type="password"] {
+	width: 100%;
+	border: none;
+	background-color: #f1f7fa;
+	padding: 12px;
+	border-radius: 2px;
+}
+.page-template-page_login #loginform input[type="submit"] {
+	display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #FF4400;
+    color: #fff;
+    background-color: #FF4400;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}/*
+.page-template-page_login #loginform input[type="submit"]:hover {
+	border-color: #FF4400;
+	color: #FF4400;
 }*/
 /*--------------------------------------------------------------
 ## Comments
