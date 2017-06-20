@@ -442,7 +442,7 @@ input[type="submit"] {
 	box-shadow: none;
 	background-color: transparent;
 	font-family: 'Montserrat', sans-serif;
-	border: 2px solid #7B8F97;
+	border: 1px solid #7B8F97;
 	color: #7B8F97;
 	padding: 6px 12px;
 	font-size: 0.8rem;
@@ -896,7 +896,7 @@ a:active {
 .projects-archive .project .learn-more-link {
 	box-shadow: none;
 	font-family: 'Montserrat', sans-serif;
-	border: 2px solid #7B8F97;
+	border: 1px solid #7B8F97;
 	color: #7B8F97;
 	padding: 6px 12px;
 	font-size: 0.8rem;
@@ -908,7 +908,7 @@ a:active {
 	z-index: 10;
 }
 .projects-archive .project .learn-more-link:hover {
-	border: 2px solid #FF4400;
+	border: 1px solid #FF4400;
 	color: #FF4400;
 }
 @media screen and (min-width: 910px) {
@@ -1068,7 +1068,7 @@ a:active {
 .single-project .comments-area input[type="submit"] {
 	display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #7B8F97;
+    border: 1px solid #7B8F97;
     color: #7B8F97;
     padding: 6px 12px;
     font-size: 0.8rem;
@@ -1256,7 +1256,7 @@ a:active {
 .page-template-page_login #loginform input[type="submit"] {
 	display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #FF4400;
+    border: 1px solid #FF4400;
     color: #fff;
     background-color: #FF4400;
     padding: 6px 12px;
