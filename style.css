@@ -974,6 +974,30 @@ a:active {
     box-shadow: 0 -5px 50px 0px rgba(214,231,239,0.2);
     border: 1px solid #fff;
 }
+/*Updates Section Styling*/
+.single-project .byline {
+	display: flex;
+
+}
+.single-project .byline .avatar {
+	border-radius: 50%;
+	margin-right: 16px;
+
+}
+.single-project .byline .fn {
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+	top: -16px;
+}
+.single-project .posted-on {
+	position: relative;
+	display: inline-block;
+	top: -16px;
+	padding-left: 52px;
+}
+
+/*Discussion Section Styling*/
 .single-project .comments-area .comment-list {
 	margin: 0;
 	padding: 0;
@@ -996,9 +1020,9 @@ a:active {
 }
 .single-project .comments-area .comment-author .fn {
 	position: relative;
-	/*top: 2px;*/
+	top: -2px;
 	margin-right: 20px;
-	display: block;
+	display: inline-block;
 }
 .single-project .comments-area .comment-metadata {
 	padding-left: 52px;
