@@ -489,6 +489,9 @@ textarea:focus {
 
 textarea {
 	width: 100%;
+	border: 2px solid #f1f7fa;
+	background-color: #f1f7fa;
+	padding: 12px;
 }
 
 /*--------------------------------------------------------------
@@ -971,7 +974,49 @@ a:active {
     box-shadow: 0 -5px 50px 0px rgba(214,231,239,0.2);
     border: 1px solid #fff;
 }
-
+.single-project .comments-area .comment-list {
+	margin: 0;
+	padding: 0;
+}
+.single-project .comments-area .comment article{
+	padding: 20px 0;
+	border-bottom: 2px solid #f1f7fa;
+}
+.single-project .comments-area .comment-author {
+	display: flex;
+	position: relative;
+}
+.single-project .comments-area .comment-author .avatar {
+	border-radius: 50%;
+	margin-right: 20px;
+	display: block;
+}
+.single-project .comments-area .comment-author .says {
+	display: none;
+}
+.single-project .comments-area .comment-author .fn {
+	position: relative;
+	/*top: 2px;*/
+	margin-right: 20px;
+	display: block;
+}
+.single-project .comments-area .comment-metadata {
+	padding-left: 52px;
+	position: relative;
+	display: block;
+	top: -10px;
+}
+.single-project .comments-area .reply a {
+	display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #7B8F97;
+    color: #7B8F97;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+}
 /*Business Model Canvas*/
 .business-model {
 	min-width: 90%;
