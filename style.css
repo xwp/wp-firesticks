@@ -1266,6 +1266,12 @@ a:active {
     position: relative;
     width: 100%;
 }
+@media screen and (max-width: 37.5em) {
+	.page-template-page_login #loginform {
+		padding: 40px;
+		width: 100%;
+	}
+}
 /*Project Updates Single*/
 .single-updates .updates {
 	position: relative;
