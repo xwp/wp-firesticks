@@ -1234,11 +1234,27 @@ a:active {
     text-align: center;
     position: relative;
     width: 100%;
-}/*
-.page-template-page_login #loginform input[type="submit"]:hover {
-	border-color: #FF4400;
-	color: #FF4400;
-}*/
+}
+/*Project Updates Single*/
+.single-updates .updates {
+	position: relative;
+    padding: 40px 80px 60px 80px;
+	border-radius: 3px;
+	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
+	border-width: 0;
+	background-color: #fff;
+	margin: 40px 0;
+}
+/*Project Updates Shortcode*/
+.projects-updates .entry-content {
+    position: relative;
+    padding: 40px 80px 60px 80px;
+	border-radius: 3px;
+	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
+	border-width: 0;
+	background-color: #fff;
+	margin-bottom: 40px;
+}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
