@@ -1037,6 +1037,9 @@ a:active {
 	margin: 0;
 	padding: 0;
 }
+.single-project .comments-area ol {
+	list-style: none;
+}
 .single-project .comments-area .comment article {
 	padding: 20px 0;
 	border-bottom: 2px solid #f1f7fa;
