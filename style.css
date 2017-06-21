@@ -1015,21 +1015,27 @@ a:active {
 
 }
 .single-project .byline .avatar {
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	margin-right: 16px;
-
+	margin-right: 15px;
 }
 .single-project .byline .fn {
 	position: relative;
 	display: inline-block;
 	font-weight: 700;
-	top: -16px;
+	top: -22px;
 }
 .single-project .posted-on {
 	position: relative;
 	display: inline-block;
-	top: -16px;
-	padding-left: 52px;
+	top: -26px;
+	padding-left: 58px;
+	opacity: 0.7;
+	font-size: 0.9rem;
+}
+.single-project #updates p {
+	padding-left: 58px;
 }
 
 /*Discussion Section Styling*/
@@ -1050,8 +1056,10 @@ a:active {
 }
 .single-project .comments-area .comment-author .avatar {
 	border-radius: 50%;
-	margin-right: 20px;
+	margin-right: 18px;
 	display: block;
+	width: 40px;
+	height: 40px;
 }
 .single-project .comments-area .comment-author .says {
 	display: none;
@@ -1063,10 +1071,18 @@ a:active {
 	display: inline-block;
 }
 .single-project .comments-area .comment-metadata {
-	padding-left: 52px;
+	padding-left: 58px;
 	position: relative;
 	display: block;
-	top: -10px;
+	top: -22px;
+}
+.single-project .comments-area .comment-metadata a {
+	/*color: #777;*/
+	opacity: 0.6;
+	font-size: 0.9rem;
+}
+.single-project .comments-area .reply {
+	padding-left: 58px;
 }
 .single-project .comments-area .reply a,
 .single-project .comments-area input[type="submit"] {
@@ -1085,6 +1101,20 @@ a:active {
 	border-color: #FF4400;
 	color: #FF4400;
 }
+.single-project .comments-area .comment-metadata .edit-link {
+	display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.single-project .comment-content {
+	padding-left: 58px;
+    margin-top: -14px;
+}
+.single-project .comment-content p {
+	margin-top: 0;
+}
+
 /*Business Model Canvas*/
 .business-model {
 	min-width: 90%;
