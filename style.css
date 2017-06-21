@@ -489,7 +489,7 @@ textarea:focus {
 
 textarea {
 	width: 100%;
-	border: 2px solid #f1f7fa;
+	border: 1px solid #f1f7fa;
 	background-color: #f1f7fa;
 	padding: 12px;
 }
@@ -978,12 +978,13 @@ a:active {
 }
 
 .single-project article .entry-content {
-	margin-top: 3em;
+	/*margin-top: 3em;*/
 	background-color: #fff;
-    padding: 3em 4em;
+    padding: 3em;
     /*box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);*/
     border-radius: 3px;
-    border: 2px solid #7B8F97;
+    /*border: 2px solid #7B8F97;*/
+    border-bottom: 2px solid #f1f7fa;
 }
 .single-project article .entry-content ul,
 .single-project article .entry-content ol {
@@ -1428,4 +1429,8 @@ To learn how this works, see http://wp.me/PEmnE-Bt
 	/*display: block*/
 }
 
+
+.brand-background-color {
+	color: #f1f7fa;
+}
 
