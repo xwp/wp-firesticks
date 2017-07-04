@@ -840,16 +840,16 @@ a:active {
 /*Project Archive Tiles*/
 .projects-archive {
 	width: 100%;
-    display: flex;
+	display: flex;
 	flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: center;
+	justify-content: flex-start;
+	align-content: center;
 }
 .projects-archive .project {
 	margin: 0 1% 25px;
-    vertical-align: top;
-    position: relative;
-    padding-bottom: 72px;
+	vertical-align: top;
+	position: relative;
+	padding-bottom: 72px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 	color: #fff;
@@ -947,7 +947,7 @@ a:active {
 .likes {
 	position: absolute;
 	top: 12px;
-    right: 20px;
+	right: 20px;
 	z-index: 10;
 }
 .likes span {
@@ -999,9 +999,9 @@ a:active {
 
 .single-project article .entry-content {
 	background-color: #fff;
-    padding: 3em;
-    border-radius: 3px;
-    border-bottom: 2px solid #f1f7fa;
+	padding: 3em;
+	border-radius: 3px;
+	border-bottom: 2px solid #f1f7fa;
 }
 .single-project article .entry-content ul,
 .single-project article .entry-content ol {
@@ -1016,15 +1016,15 @@ a:active {
 }
 .single-project .tabs {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 .single-project nav.tabs li {
 	transition: none;
 }
 .single-project nav.tabs li.current,
 .single-project .tab-content {
-    box-shadow: 0 -5px 50px 0px rgba(214,231,239,0.2);
-    border: 1px solid #fff;
+	box-shadow: 0 -5px 50px 0px rgba(214,231,239,0.2);
+	border: 1px solid #fff;
 }
 /*Updates Section Styling*/
 .single-project .byline {
@@ -1103,14 +1103,14 @@ a:active {
 .single-project .comments-area .reply a,
 .single-project .comments-area input[type="submit"] {
 	display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #7B8F97;
-    color: #7B8F97;
-    padding: 6px 12px;
-    font-size: 0.8rem;
-    border-radius: 2px;
-    text-align: center;
-    position: relative;
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid #7B8F97;
+	color: #7B8F97;
+	padding: 6px 12px;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
 }
 .single-project .comments-area .reply a:hover,
 .single-project .comments-area input[type="submit"]:hover {
@@ -1119,13 +1119,13 @@ a:active {
 }
 .single-project .comments-area .comment-metadata .edit-link {
 	display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .single-project .comment-content {
 	padding-left: 58px;
-    margin-top: -14px;
+	margin-top: -14px;
 }
 .single-project .comment-content p {
 	margin-top: 0;
@@ -1256,9 +1256,9 @@ a:active {
 }
 .page-template-page_login #loginform {
 	display: inline-block;
-    position: relative;
-    padding: 60px 80px;
-    width: 480px;
+	position: relative;
+	padding: 60px 80px;
+	width: 480px;
 	border-radius: 3px;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 	border-width: 0;
@@ -1277,16 +1277,16 @@ a:active {
 }
 .page-template-page_login #loginform input[type="submit"] {
 	display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #FF4400;
-    color: #fff;
-    background-color: #FF4400;
-    padding: 6px 12px;
-    font-size: 0.8rem;
-    border-radius: 2px;
-    text-align: center;
-    position: relative;
-    width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid #FF4400;
+	color: #fff;
+	background-color: #FF4400;
+	padding: 6px 12px;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+	width: 100%;
 }
 @media screen and (max-width: 37.5em) {
 	.page-template-page_login #loginform {
@@ -1297,7 +1297,7 @@ a:active {
 /*Project Updates Single*/
 .single-updates .updates {
 	position: relative;
-    padding: 40px 80px 60px 80px;
+	padding: 40px 80px 60px 80px;
 	border-radius: 3px;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 	border-width: 0;
@@ -1306,8 +1306,8 @@ a:active {
 }
 /*Project Updates Shortcode*/
 .projects-updates .entry-content {
-    position: relative;
-    padding: 40px 80px 60px 80px;
+	position: relative;
+	padding: 40px 80px 60px 80px;
 	border-radius: 3px;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 	border-width: 0;
@@ -1435,8 +1435,8 @@ object {
 }
 .site-branding .custom-logo-link img {
 	height: 42px;
-    width: auto;
-    display: block
+	width: auto;
+	display: block
 }
 .brand-background-color {
 	color: #f1f7fa;
