@@ -1005,11 +1005,11 @@ a:active {
 }
 
 .single-project article .entry-content {
-	margin: 2em auto;
+	margin: 2rem auto;
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-	padding: 3em;
+	padding: 1em 3em;
 }
 .single-project article .entry-content ul,
 .single-project article .entry-content ol {
@@ -1058,7 +1058,7 @@ a:active {
 	z-index: 5;
 }
 .single-project article .roles li div.closed:before,
-.single-project article .roles li:hover div:before {
+.single-project article .roles li:hover div.open:before {
 	background: linear-gradient(165deg, rgba(0,0,0,0.25) 25%, rgba(255,255,255,0.25) 120%);
 }
 .single-project article .roles li span {
@@ -1108,15 +1108,67 @@ a:active {
 }
 .single-project .tabs {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
-.single-project nav.tabs li {
-	transition: none;
+.single-project .tabs ul {
+	padding: 0;
+	font-size: 0;
 }
-.single-project nav.tabs li.current,
+.single-project .tabs li,
+.single-project .tabs li.current,
 .single-project .tab-content {
 	background: none;
-	border: none;
+	border: 0;
+}
+.single-project .tabs li {
+	text-align: left;
+	transition: none;
+	border-bottom: 4px solid transparent;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9rem;
+	line-height: 1em;
+}
+.single-project .tabs li.current {
+	border-bottom: 4px solid transparent;
+}
+.single-project .tabs li.details a:before {
+	content: "\f122";
+}
+.single-project .tabs li.updates a:before {
+	content: "\f488";
+}
+.single-project .tabs li.discussion a:before {
+	content: "\f125";
+}
+.single-project .tabs li a:before {
+	font-family: 'Dashicons';
+	padding-right: 10px;
+	font-size: 1.5rem;
+	position: relative;
+	top: 6px;
+}
+.single-project .tabs li a {
+	color: #546368;
+	display: block;
+	padding: 10px 15px;
+}
+.single-project article .video-pitch {
+	padding: 0;
+	overflow: hidden;
+	font-size: 0;
+}
+.single-project article .video-pitch iframe {
+	width: 100%;
+	height: 550px;
+}
+.single-project article .overview {
+	padding-top: 2em;
+}
+.single-project article .overview h2:first-child {
+	display: none;
 }
 /*Updates Section Styling*/
 .single-project .byline {
@@ -1224,62 +1276,54 @@ a:active {
 }
 
 /*Business Model Canvas*/
-.business-model {
-	min-width: 90%;
-	font-size: 0.8em;
-	margin: 3em auto !important;
+.single-project article .business-model {
+	font-size: 0.9em;
+	padding-bottom: 3em;
 }
-.business-model h2 {
-	margin: 0 15% 0.5em;
+.single-project article .business-model h3 {
+	margin: 0 0 0.5em;
 }
-.business-model h3 {
-	margin-bottom: 0.5em;
-}
-.business-model .canvas {
-	border-right: 2px solid #f4f4f4;
-	border-bottom: 2px solid #f4f4f4;
+.single-project article .business-model .canvas {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
 	align-content: stretch;
 	width: 100%;
+	border: 1px solid #ddd;
 }
-.business-model .canvas div {
+.single-project article .business-model .canvas > div {
 	width: 100%;
 	flex: 1 1 33%;
+	border: 1px solid #ddd;
 }
-.business-model .canvas div > div {
-	border-top: 2px solid #f4f4f4;
-	border-left: 2px solid #f4f4f4;
-	background: #fff;
+.single-project article .business-model .canvas div > div {
 	padding: 1em;
 	overflow: scroll;
+	flex: 1 1 33%;
+	max-height: 25em;
 }
-.business-model .canvas .row {
+.single-project article .business-model .canvas .row div {
+	border-right: 2px solid #ddd;
+}
+.single-project article .business-model .canvas .row div:last-child {
+	border-right: none;
+}
+.single-project article .business-model .canvas .row {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: stretch;
 	align-content: stretch;
 	margin: 0;
 }
-.business-model .canvas .delivery-activities,
-.business-model .canvas .value-proposition,
-.business-model .canvas .customer-profile{
-	height: 30em;
-}
-.business-model .canvas .cost-structure,
-.business-model .canvas .revenue-streams {
-	height: 15em;
-}
 @media screen and (max-width: 756px) {
-	.business-model .canvas div {
+	.single-project article .business-model .canvas div {
 		width: 100%;
 		flex: 1 1 100%;
 		height: auto !important;
 	}
 }
 
-.timeline ul {
+.single-project article .timeline ul {
 	list-style-type: none;
 	border-left: 2px solid #7B8F97;
 	margin-left: 120px !important;
@@ -1287,7 +1331,7 @@ a:active {
 	position: relative;
 	list-style-type: none;
 }
-.timeline li {
+.single-project article .timeline li {
 	border: 2px solid #f7f7f7;
 	background: #f7f7f7;
 	margin-bottom: 1em;
@@ -1295,21 +1339,21 @@ a:active {
 	border-radius: 2px;
 	position: relative;
 }
-.timeline li .date {
+.single-project article .timeline li .date {
 	font-style: italic;
 	margin-bottom: 0.5em;
 	position: absolute;
-	left: 0px;
+	left: 0;
 	top: -6px;
 	margin-left: -230px;
 	text-align: right;
 	width: 150px;
 	font-size: 0.9em;
 }
-.timeline li h3 {
+.single-project article .timeline li h3 {
 	margin-top: 0;
 }
-.timeline li:before {
+.single-project article .timeline li:before {
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
@@ -1321,19 +1365,19 @@ a:active {
 	top: -2px;
 	left: -49px;
 }
-.timeline li:hover:before {
+.single-project article .timeline li:hover:before {
 	border-color: #ff4401;
 	background-color: #ff4401;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 }
-.timeline li:hover {
+.single-project article .timeline li:hover {
 	border-color: #ff4401;
 	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
 }
-.timeline li h3 {
+.single-project article .timeline li h3 {
 	margin-bottom: 0.5em;
 }
-.timeline li p {
+.single-project article .timeline li p {
 	margin: 0 0 1em;
 }
 /*Login page*/
