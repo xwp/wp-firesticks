@@ -60,7 +60,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Lato', sans-serif;
 }
 
 article,
@@ -125,8 +125,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lato', sans-serif !important;
-	font-weight: 500 !important;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
 }
 
 h1 {
@@ -283,7 +283,7 @@ button,
 input,
 select,
 textarea {
-	color: #7B8F97;
+	color: #546368;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -834,7 +834,7 @@ a:active {
 }
 
 .roles li .open .avatar.photo {
-	display: none;
+	opacity: 0;
 }
 
 /*Project Archive Tiles*/
@@ -948,7 +948,7 @@ a:active {
 		right: 20px;
 	}
 	.projects-archive .project .actions {
-		padding: 20px 145px 20px 20px;
+		padding: 20px 140px 20px 20px;
 	}
 }
 /*Project Tile Like Button*/
@@ -986,41 +986,125 @@ a:active {
 /*Single Project Page*/
 .single-project article .entry-header {
 	text-align: center;
-	padding: 1em;
-	margin: 0 auto 2em;
 	position: relative;
 	z-index: 1;
 }
 .single-project article .entry-header h1 {
-	font-size: 2.6rem;
+	font-size: 2rem;
+	margin-bottom: 0;
+	font-weight: 900;
 }
+.single-project article .entry-header p {
 
-.single-project article .entry-header .feature-color {
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+}
+.single-project article .entry-header h1,
+.single-project article .entry-header p,
+.single-project article .entry-header ul {
+	position: relative;
+	z-index: 10;
 }
 
 .single-project article .entry-content {
+	margin: 2em auto;
 	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 	padding: 3em;
-	border-radius: 3px;
-	border-bottom: 2px solid #f1f7fa;
 }
 .single-project article .entry-content ul,
 .single-project article .entry-content ol {
 	margin-left: 1em;
 }
-.single-project article .roles li img {
-	border-radius: 50%;
+.single-project article .roles {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	width: 100%;
+}
+.single-project article .roles li {
+	flex: 0 1 98%;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	padding: 1em;
+	margin: 0 1% 20px;
 	overflow: hidden;
+	text-align: left;
+	color: #fff;
+	min-height: 80px;
+}
+.single-project article .roles li:hover {
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+.single-project article .roles li:hover .open .avatar.photo {
+	opacity: 1;
+}
+.single-project article .roles li img {
+	position: absolute;
+	top: -50%;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 0;
+}
+.single-project article .roles li div:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(165deg, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.25) 100%);
+	z-index: 5;
+}
+.single-project article .roles li div.closed:before,
+.single-project article .roles li:hover div:before {
+	background: linear-gradient(165deg, rgba(0,0,0,0.25) 25%, rgba(255,255,255,0.25) 120%);
+}
+.single-project article .roles li span {
+	z-index: 10;
+	position: relative;
+	padding-top: 0;
+	text-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.single-project article .roles li span.role {
+	font-weight: 400;
+}
+.single-project article .roles li span.name {
+	font-weight: 600;
 }
 .single-project article .roles li span.empty {
-	background-color: #fff;
+	display: none;
+}
+.single-project article .roles li .join {
+	margin: 0.5em 0 0;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.single-project article .roles li .join:hover {
+	color: #fff;
+	border-color: #fff;
+	background: rgba(255,255,255,0.25);
+}
+@media screen and (min-width: 400px) {
+	.single-project article .roles li {
+		flex: 0 1 48%;
+	}
+}
+@media screen and (min-width: 767px) {
+	.single-project article .roles li {
+		flex: 0 1 31.33%;
+	}
+}
+@media screen and (min-width: 992px) {
+	.single-project article .roles li {
+		flex: 0 1 23%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.single-project article .roles {
+		width: 80%;
+	}
 }
 .single-project .tabs {
 	display: flex;
@@ -1031,8 +1115,8 @@ a:active {
 }
 .single-project nav.tabs li.current,
 .single-project .tab-content {
-	box-shadow: 0 -5px 50px 0px rgba(214,231,239,0.2);
-	border: 1px solid #fff;
+	background: none;
+	border: none;
 }
 /*Updates Section Styling*/
 .single-project .byline {
