@@ -507,11 +507,12 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #7B8F97;
+	color: #fc461e;
+	text-decoration: none;
 }
 
 a:visited {
-	color: #7B8F97;
+	color: #fc461e;
 }
 
 a:hover,
@@ -519,6 +520,7 @@ a:focus,
 a:active {
 	color: #fc461e;
 	outline: none;
+	text-decoration: underline;
 }
 /*--------------------------------------------------------------
 ## Menus
@@ -555,9 +557,13 @@ a:active {
 }
 
 .main-navigation a {
+	color: #546368;
 	display: block;
 	text-decoration: none;
 	padding: 6px 16px;
+}
+.main-navigation a:hover {
+	color: #fc461e;
 }
 
 .nav-btn a {
@@ -573,6 +579,7 @@ a:active {
 
 .nav-btn a:hover {
 	background-color: rgba(36, 179, 68, 0.75);
+	color: #fff;
 }
 
 .main-navigation ul ul {
@@ -822,7 +829,6 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-.byline,
 .updated:not(.published) {
 	display: none;
 }
@@ -837,16 +843,8 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-.roles li .avatar.empty {
-	opacity: 0.2;
-}
-
-.roles li .open .avatar.photo {
-	opacity: 0;
-}
-
 /*Project Archive Tiles*/
-.projects-archive {
+.project-archive {
 	width: 102%; /* To account for the 1% column gutters */
 	margin-left: -1%;
 	display: flex;
@@ -854,7 +852,7 @@ a:active {
 	justify-content: flex-start;
 	align-content: center;
 }
-.projects-archive .project {
+.project-archive .project {
 	margin: 0 1% 25px;
 	vertical-align: top;
 	position: relative;
@@ -865,33 +863,36 @@ a:active {
 	border: 0;
 	flex: 0 1 99%;
 }
-.projects-archive .project:hover {
+.project-archive .project:hover {
 	box-shadow: 0 0 6px rgba(0,0,0,0.25);
 }
-.projects-archive .project .entry-title {
+.project-archive .project .entry-title {
 	padding: 0 60px 0 20px;
 	z-index: 10;
 	position: relative;
 }
-.projects-archive .project .entry-title a {
+.project-archive .project .entry-title a {
 	color: #fff;
 	display: block;
 }
-.projects-archive .project .actions {
+.project-archive .project .entry-title a:hover {
+	text-decoration: none;
+}
+.project-archive .project .actions {
 	background-color: #fff;
 	margin-top: 20px;
 	border-top: 0;
 	padding: 20px;
 	height: 70px;
 }
-.projects-archive .project .actions .roles {
+.project-archive .project .actions .roles {
 	white-space: nowrap;
 	overflow: scroll;
 	padding: 0;
 	margin: 0;
 	text-align: left;
 }
-.projects-archive .project .actions .roles li {
+.project-archive .project .actions .roles li {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -900,19 +901,27 @@ a:active {
 	border-radius: 15px;
 	overflow: hidden;
 }
-.projects-archive .project .actions .roles li .avatar.empty {
+.roles li .avatar.empty {
+	opacity: 0.2;
+	border-width: 0;
+	background-color: #f4f4f4;
+}
+.roles li .open .avatar.photo {
+	opacity: 0;
+}
+.project-archive .project .actions .roles li .avatar.empty {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-.projects-archive .project .actions .roles li > div {
+.project-archive .project .actions .roles li > div {
 	width: 100%;
 	height: 100%;
 }
-.projects-archive .project .actions .roles .role, .projects-archive .project .roles .name {
+.project-archive .project .actions .roles .role, .project-archive .project .roles .name {
 	display: none;
 }
-.projects-archive .project .description:before {
+.project-archive .project .description:before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -922,7 +931,7 @@ a:active {
 	background: linear-gradient(165deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.33) 100%);
 	z-index: 0;
 }
-.projects-archive .project .description .learn-more-link {
+.project-archive .project .description .learn-more-link {
 	box-shadow: none;
 	font-family: 'Montserrat', sans-serif;
 	border: 1px solid #7B8F97;
@@ -936,28 +945,31 @@ a:active {
 	right: auto;
 	z-index: 10;
 }
+.project-archive .project .description .learn-more-link:hover {
+	text-decoration: none;
+}
 @media screen and (min-width: 768px) {
-	.projects-archive .project {
+	.project-archive .project {
 		flex: 0 1 48%;
 	}
 }
 @media screen and (max-width: 992px) {
-	.projects-archive .project .description .learn-more-link {
+	.project-archive .project .description .learn-more-link {
 		color: #fff !important;
 		border-color: #fff !important;
 	}
 }
 @media screen and (min-width: 992px) {
-	.projects-archive .project {
+	.project-archive .project {
 		flex: 0 1 31.33%;
 	}
-	.projects-archive .project .description .learn-more-link {
+	.project-archive .project .description .learn-more-link {
 		position: absolute;
 		bottom: 18px;
 		right: 20px;
 	}
-	.projects-archive .project .actions {
-		padding: 20px 140px 20px 20px;
+	.project-archive .project .actions {
+		padding: 20px 145px 20px 20px;
 	}
 }
 /*Project Tile Like Button*/
@@ -978,6 +990,9 @@ a:active {
 .likes a {
 	font-size: 0;
 }
+.likes a:hover {
+	text-decoration: none;
+}
 .likes a.unlike:after,
 .likes a.like:hover:after {
 	color: rgba(255,255,255,1);
@@ -986,11 +1001,6 @@ a:active {
 .likes a.unlike:hover:after {
 	color: rgba(255,255,255,0.6);
 }
-.roles li .avatar.empty {
-	border-width: 0;
-	background-color: #f4f4f4;
-}
-
 
 /*Single Project Page*/
 .single-project article .entry-header {
@@ -1003,9 +1013,6 @@ a:active {
 	margin-bottom: 0;
 	font-weight: 900;
 }
-.single-project article .entry-header p {
-
-}
 .single-project article .entry-header h1,
 .single-project article .entry-header p,
 .single-project article .entry-header ul {
@@ -1013,7 +1020,8 @@ a:active {
 	z-index: 10;
 }
 
-.single-project article .entry-content {
+.single-project article .entry-content,
+.project-updates .entry-content {
 	margin: 2rem auto;
 	background-color: #fff;
 	border-radius: 5px;
@@ -1021,7 +1029,9 @@ a:active {
 	padding: 1em 3em;
 }
 .single-project article .entry-content ul,
-.single-project article .entry-content ol {
+.single-project article .entry-content ol,
+.project-updates .entry-content ul,
+.project-updates .entry-content ol {
 	margin-left: 1em;
 }
 .single-project article .roles {
@@ -1317,18 +1327,18 @@ a:active {
 }
 
 /*Updates Section Styling*/
-.single-project #updates .entry-content .meta a {
-	color: #546368;
+.entry-meta a {
+	color: #546368 !important;
 }
-.single-project #updates .byline .fn {
+.byline .fn {
 	display: block;
 	font-weight: 700;
 }
-.single-project #updates .posted-on {
+.posted-on {
 	position: relative;
 	display: block;
 }
-.single-project #updates .byline .avatar {
+.byline .avatar {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
@@ -1336,7 +1346,7 @@ a:active {
 	float: left;
 }
 @media screen and (min-width: 765px) {
-	.single-project #updates .meta {
+	.entry-meta {
 		float: right;
 		margin-top: -55px;
 		margin-left: 1em;
@@ -1503,15 +1513,7 @@ a:active {
 	font-size: 0.9rem;
 	margin: 2em 0;
 }
-.projects-updates .entry-content {
-	position: relative;
-	padding: 40px 80px 60px 80px;
-	border-radius: 3px;
-	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
-	border-width: 0;
-	background-color: #fff;
-	margin-bottom: 40px;
-}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
