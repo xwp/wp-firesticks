@@ -1187,123 +1187,6 @@ a:active {
 	display: none;
 }
 
-/*Updates Section Styling*/
-.single-project #updates .entry-content .meta a {
-	color: #546368;
-}
-.single-project #updates .byline .fn {
-	display: block;
-	font-weight: 700;
-}
-.single-project #updates .posted-on {
-	position: relative;
-	display: block;
-}
-.single-project #updates .byline .avatar {
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	margin-right: 14px;
-	float: left;
-}
-@media screen and (min-width: 765px) {
-	.single-project #updates .meta {
-		float: right;
-		margin-top: -55px;
-		margin-left: 1em;
-		padding: 1em;
-		border: 2px solid #e9e9e9;
-		border-radius: 5px;
-		width: 250px;
-	}
-}
-/*Discussion Section Styling*/
-.single-project #discussion .comment-respond,
-.single-project #discussion .comment-body {
-	margin: 2rem auto;
-	background-color: #fff;
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-	padding: 1em 3em;
-	position: relative;
-}
-.single-project #discussion .comment-body {
-	padding: 2em 3em;
-}
-.single-project #discussion .comments-area .comment-list {
-	margin: 0;
-	padding: 0;
-}
-.single-project #discussion .comments-area ol {
-	list-style: none;
-}
-.single-project #discussion .comments-area ol.children {
-	margin-top: -1em;
-}
-.single-project #discussion .comments-area .comment-author {
-	display: flex;
-	position: relative;
-}
-.single-project #discussion .comments-area .comment-author .avatar {
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	margin-right: 14px;
-	float: left;
-}
-.single-project #discussion .comments-area .comment-author .says {
-	display: none;
-}
-.single-project #discussion .comments-area .comment-author .fn {
-}
-.single-project #discussion .comments-area .comment-metadata {
-	padding-left: 58px;
-	display: block;
-	margin-top: -22px;
-}
-.single-project #discussion .comments-area .comment-metadata,
-.single-project #discussion .comments-area .comment-metadata a,
-.single-project #discussion .comments-area .logged-in-as,
-.single-project #discussion .comments-area .logged-in-as a,
-.single-project #discussion .comment-reply-title small,
-.single-project #discussion .comment-reply-title small a {
-	color: #aeb6bf;
-	font-size: 0.9rem;
-}
-.single-project #discussion .comment-reply-title small {
-	padding-left: 1em;
-	font-weight: 400;
-}
-.single-project #discussion .comments-area .reply a,
-.single-project #discussion .comments-area input[type="submit"] {
-	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
-	border: 1px solid #7B8F97;
-	color: #7B8F97;
-	padding: 6px 12px;
-	font-size: 0.8rem;
-	border-radius: 2px;
-	text-align: center;
-	position: relative;
-}
-.single-project #discussion .comments-area .reply a:hover,
-.single-project #discussion .comments-area input[type="submit"]:hover {
-	border-color: #FF4400;
-	color: #FF4400;
-	text-decoration: none;
-}
-.single-project #discussion .comments-area .comment-metadata .edit-link {
-	display: block;
-	position: absolute;
-	top: 2em;
-	right: 3em;
-}
-.single-project #discussion .comment-form-comment textarea {
-	border: 2px solid #e9e9e9;
-	border-radius: 5px;
-	background: #fff;
-}
-
 /*Business Model Canvas*/
 .single-project article .business-model {
 	padding-bottom: 3em;
@@ -1430,6 +1313,124 @@ a:active {
 	.single-project article .role-descriptions .team-role {
 		flex: 0 1 31.33%;
 	}
+}
+
+/*Updates Section Styling*/
+.single-project #updates .entry-content .meta a {
+	color: #546368;
+}
+.single-project #updates .byline .fn {
+	display: block;
+	font-weight: 700;
+}
+.single-project #updates .posted-on {
+	position: relative;
+	display: block;
+}
+.single-project #updates .byline .avatar {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 14px;
+	float: left;
+}
+@media screen and (min-width: 765px) {
+	.single-project #updates .meta {
+		float: right;
+		margin-top: -55px;
+		margin-left: 1em;
+		padding: 1em;
+		border: 2px solid #e9e9e9;
+		border-radius: 5px;
+		width: 250px;
+	}
+}
+
+/*Discussion Section Styling*/
+.single-project #discussion .comment-respond,
+.single-project #discussion .comment-body {
+	margin: 2rem auto;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+	padding: 1em 3em;
+	position: relative;
+}
+.single-project #discussion .comment-body {
+	padding: 2em 3em;
+}
+.single-project #discussion .comments-area .comment-list {
+	margin: 0;
+	padding: 0;
+}
+.single-project #discussion .comments-area ol {
+	list-style: none;
+}
+.single-project #discussion .comments-area ol.children {
+	margin-top: -1em;
+}
+.single-project #discussion .comments-area .comment-author {
+	display: flex;
+	position: relative;
+}
+.single-project #discussion .comments-area .comment-author .avatar {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 14px;
+	float: left;
+}
+.single-project #discussion .comments-area .comment-author .says {
+	display: none;
+}
+.single-project #discussion .comments-area .comment-author .fn {
+}
+.single-project #discussion .comments-area .comment-metadata {
+	padding-left: 58px;
+	display: block;
+	margin-top: -22px;
+}
+.single-project #discussion .comments-area .comment-metadata,
+.single-project #discussion .comments-area .comment-metadata a,
+.single-project #discussion .comments-area .logged-in-as,
+.single-project #discussion .comments-area .logged-in-as a,
+.single-project #discussion .comment-reply-title small,
+.single-project #discussion .comment-reply-title small a {
+	color: #aeb6bf;
+	font-size: 0.9rem;
+}
+.single-project #discussion .comment-reply-title small {
+	padding-left: 1em;
+	font-weight: 400;
+}
+.single-project #discussion .comments-area .reply a,
+.single-project #discussion .comments-area input[type="submit"] {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid #7B8F97;
+	color: #7B8F97;
+	padding: 6px 12px;
+	font-size: 0.8rem;
+	border-radius: 2px;
+	text-align: center;
+	position: relative;
+}
+.single-project #discussion .comments-area .reply a:hover,
+.single-project #discussion .comments-area input[type="submit"]:hover {
+	border-color: #FF4400;
+	color: #FF4400;
+	text-decoration: none;
+}
+.single-project #discussion .comments-area .comment-metadata .edit-link {
+	display: block;
+	position: absolute;
+	top: 2em;
+	right: 3em;
+}
+.single-project #discussion .comment-form-comment textarea {
+	border: 2px solid #e9e9e9;
+	border-radius: 5px;
+	background: #fff;
 }
 
 /*Login page*/
