@@ -901,14 +901,6 @@ a:active {
 	border-radius: 15px;
 	overflow: hidden;
 }
-.roles li .avatar.empty {
-	opacity: 0.2;
-	border-width: 0;
-	background-color: #f4f4f4;
-}
-.roles li .open .avatar.photo {
-	opacity: 0;
-}
 .project-archive .project .actions .roles li .avatar.empty {
 	width: 100%;
 	height: 100%;
@@ -917,6 +909,9 @@ a:active {
 .project-archive .project .actions .roles li > div {
 	width: 100%;
 	height: 100%;
+}
+.project-archive .project .actions .roles li > div.waiting {
+	opacity: 0.2;
 }
 .project-archive .project .actions .roles .role, .project-archive .project .roles .name {
 	display: none;
@@ -1057,6 +1052,9 @@ a:active {
 }
 .single-project article .roles li:hover {
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+.single-project article .roles li .open .avatar.photo {
+	opacity: 0;
 }
 .single-project article .roles li:hover .open .avatar.photo {
 	opacity: 1;
