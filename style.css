@@ -1457,10 +1457,10 @@ a:active {
 .page-template-page_login #loginform {
 	display: inline-block;
 	position: relative;
-	padding: 60px 80px;
+	padding: 2em 3em;
 	width: 480px;
-	border-radius: 3px;
-	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 	border-width: 0;
 	background-color: #fff;
 }
@@ -1496,15 +1496,6 @@ a:active {
 }
 
 /*Project Updates Single*/
-.single-updates .updates {
-	position: relative;
-	padding: 40px 80px 60px 80px;
-	border-radius: 3px;
-	box-shadow: 5px 5px 50px 0px rgba(214,231,239,0.2);
-	border-width: 0;
-	background-color: #fff;
-	margin: 40px 0;
-}
 /*Page styles*/
 .page .entry-header .entry-title,
 .page h3 {
