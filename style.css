@@ -847,7 +847,8 @@ a:active {
 
 /*Project Archive Tiles*/
 .projects-archive {
-	width: 100%;
+	width: 102%; /* To account for the 1% column gutters */
+	margin-left: -1%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
@@ -1483,6 +1484,7 @@ a:active {
 		width: 100%;
 	}
 }
+
 /*Project Updates Single*/
 .single-updates .updates {
 	position: relative;
@@ -1493,7 +1495,14 @@ a:active {
 	background-color: #fff;
 	margin: 40px 0;
 }
-/*Project Updates Shortcode*/
+/*Page styles*/
+.page .entry-header .entry-title,
+.page h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9rem;
+	margin: 2em 0;
+}
 .projects-updates .entry-content {
 	position: relative;
 	padding: 40px 80px 60px 80px;
