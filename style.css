@@ -1245,10 +1245,16 @@ a:active {
 }
 @media screen and (max-width: 756px) {
 	.single-project article .business-model .canvas > div,
-	.single-project article .business-model .canvas .row > div{
+	.single-project article .business-model .canvas .row > div {
 		width: 100%;
 		flex: 1 1 100%;
 		height: auto !important;
+	}
+	.single-project article .business-model .canvas .row > div {
+		margin-bottom: 20px;
+	}
+	.single-project article .business-model .canvas .row > div:last-child {
+		margin-bottom: 0;
 	}
 }
 
