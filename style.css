@@ -923,6 +923,7 @@ a:active {
 	top: 0;
 	left: 0;
 	background: linear-gradient(165deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.33) 100%);
+	border-radius: 5px;
 	z-index: 0;
 }
 .project-archive .project .description .learn-more-link {
@@ -1074,11 +1075,13 @@ a:active {
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(165deg, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.25) 100%);
+	border-radius: 5px;
 	z-index: 5;
 }
 .single-project article .roles li div.closed:before,
 .single-project article .roles li:hover div.open:before {
 	background: linear-gradient(15deg, rgba(0,0,0,0.25) 25%, rgba(255,255,255,0.25) 120%);
+	border-radius: 5px;
 }
 .single-project article .roles li span {
 	z-index: 10;
@@ -1175,6 +1178,7 @@ a:active {
 	display: block;
 	padding: 10px 15px;
 	text-decoration: none;
+	transition: none;
 }
 .single-project .tabs li a:hover {
 	text-decoration: none;
